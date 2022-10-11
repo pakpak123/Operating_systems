@@ -12,14 +12,14 @@ namespace Os_Sync_Ex_01
         {
             int i;
             for( i = 1 ; i < 1000001 ; i++)
-            sum += i;
+                sum += i;
         }
 
         static void minus()
         {
             int i;
             for(i = 0 ; i<1000000 ; i++)
-            sum-=i;
+                sum-=i;
         }
 
         static void Main(string[] args)
