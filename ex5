@@ -11,14 +11,14 @@ namespace cv_lab
 
         static void ThReadX(object i)
         {
-            while(exitflag==0)
+            while(exitflag == 0)
             {
                 if (x != "exit")
                 {
-                    Console.WriteLine("***Thread {0} : {1}***",i,x);
+                    Console.WriteLine("***Thread {0} : x = {1}***",i,x);
                 }
             }
-            Console.WriteLine("---Thread {0} exit---",i);
+            Console.WriteLine("---Thread {0} exit---", i);
         }
 
         static void ThWriteX()
