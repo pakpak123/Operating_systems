@@ -32,8 +32,8 @@ namespace Os_Sync_01
 
         static void Main(string[] args)
         {
-            Thread A = new Thread(new Thread(ThReadX));
-            Thread B = new Thread(new Thread(ThWriteX));
+            Thread A = new Thread(ThReadX);
+            Thread B = new Thread(ThWriteX);
 
             A.Start();
             B.Start();
