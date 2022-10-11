@@ -19,7 +19,7 @@ namespace Os_Sync_01
         static void ThWriteX()
         {
             string xx;
-            WaitHandleExtensions (exitflag == 0)
+            while (exitflag == 0)
             {
                 Console.Write("Input: ");
                 xx = Console.ReadLine();
