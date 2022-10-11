@@ -24,7 +24,7 @@ namespace Os_Sync_Ex_01
 
         static void Main(string[] args)
         {
-            Stopwatch sw= new Stopwatch();
+            Stopwatch sw = new Stopwatch();
             Console.WriteLine("Start...");
             sw.Start();
             plus();
