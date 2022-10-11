@@ -23,7 +23,7 @@ namespace Os_Sync_Ex_01
         {
             int i;
             for(i = 0 ; i<1000000 ; i++)
-            lock (_Lock)
+                lock (_Lock)
                 {
                     sum -= i;
                 }
@@ -38,14 +38,14 @@ namespace Os_Sync_Ex_01
             Console.WriteLine("Start...");
             sw.Start();
 
-            P.plus();
-            M.minus();
+            P.Start();
+            M.Start();
 
-            P.Joint();
-            M.Joint();
+            P.Join();
+            M.Join();
 
             sw.Stop();
-            Console.WriteLine("sum = {0}",sum);
+            Console.WriteLine("sum = {0}", sum);
             Console.WriteLine("Time used: " + sw.ElapsedMilliseconds.ToString() + "ms");
         }
     }
